@@ -119,11 +119,8 @@
                     <image src="img/anchor_figure.png" width="100%"></image>
                 </p>
                 <p class="text-justify">
-                    BYOVLA is predicated on three simple steps which are applied to a VLA's input image: <br>
-                    1) Determine task-irrelevant regions <br>
-                    2) Apply visual sensitivity probe <br>
-                    3) Transform the image <br>
-                    Task-irrelevant regions are determined by an external vision-language model (VLM). If the VLA is sensitive to a task-irrelevant region, BYOVLA transforms the image such that the model is no longer sensitive by simply removing objects and recoloring backgrounds. 
+                    BYOVLA is predicated on three simple steps applied to a VLA's input image: 1) determine task-irrelevant regions, 2) quantify sensitivity with visual sensitivity probe, and 3) transform the image. 
+                    Task-irrelevant regions are determined by a vision-language model (VLM). If the VLA is sensitive to a task-irrelevant region, BYOVLA transforms the image such that the model is no longer sensitive by simply removing objects and recoloring backgrounds. 
                 </p>
             </div>
         </div>
@@ -233,6 +230,8 @@
 
         <div class="row justify-content-md-center"></div>
             <div class="col-md-10 col-lg-8">
+                <p style="text-align:center;">
+                </p>
             <h2 class="title is-3">Results</h2>
                 <p class="text-justify">
                     We evaluate BYOVLA on Octo-Base with the task "place the carrot on yellow plate." With distractions, the performance of the nominal VLA policy significantly drops. Augmenting Octo-Base with BYOVLA allows the policy to achieve its nominal task-success rate even with distractions present. 
@@ -243,20 +242,34 @@
             </div>
         </div>
 
+        <div class="row justify-content-md-center"></div>
+            <div class="col-md-10 col-lg-8">
+                <p style="text-align:center;">
+                </p>
+            <h2 class="title is-3">Results</h2>
+                <p class="text-justify">
+                    We also evaluate BYOVLA on OpenVLA-7b with the task "put the eggplant in the pot." Even though OpenVLA is 75x larger than Octo-Base, task-irrelevant distractions markedly degrade performance. We find that application of BYOVLA helps OpenVLA achieve its nominal task-success rate with distractions present. 
+                </p>
+                <p style="text-align:center;"></p>
+                    <image src="img/openVLA_results.png" width="100%"></image>
+                </p>
+            </div>
+        </div>
+
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
                 <h3 class="mt-4 mb-2">
                     Citation
                 </h3>
                 <pre><code class="codeblock">
-                    <!--@article{lidard2024blending,
-                        title={Blending Data-Driven Priors in Dynamic Games},
-                        author={Lidard, Justin and Hu, Haimin and Hancock, Asher and Zhang, Zixu and Contreras, Albert Gim{\'o} and Modi, Vikash and
-                         DeCastro, Jonathan and Gopinath, Deepak and Rosman, Guy and Leonard, Naomi and Santos, Mar{\'i}a and Fisac, Jaime Fern{\'a}ndez},
-                        journal={arXiv preprint arXiv:2402.14174},
+                    @article{lidard2024blending,
+                        title={Run-time Observation Interventions
+                            Make Vision-Language-Action Models More Visually Robust
+                            },
+                        author={Hancock, Asher J., and Ren, Allen Z., and Majumdar, Anirudha}
+                        journal={arXiv preprint FILL OUT LATER},
                         year={2024}
                       }
-                -->
                 </code></pre>
             </div>
         </div>
