@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSSR6942QL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FSSR6942QL');
+    </script>
+
     <title>Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust </title>
     <meta name="description" content="Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +23,20 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bulma-myscope.css">
     <!--<link rel="icon" href="img/hri_transparent.png">-->
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-    
     <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/bulma-slider.min.js"></script>
+    <script src="js/index.js"></script>
 	
     <style>
         .nav-pills {
@@ -147,12 +163,69 @@
                 </p> -->
             </div>
         </div>
+        <br>
 
+        <div class='myscope'>
+            <section class="hero is-light is-small">
+              <div class="hero-body">
+                <div class="container">
+                  <div id="results-carousel" class="carousel results-carousel">
+  
+                    <div class="item-1">
+                      <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+                          <source src="videos/baseline_success_10x.mp4" type="video/mp4">
+                      </video>
+                      <div class="video-overlay">
+                          <p>
+                            Task: "place the carrot on yellow plate"<br>
+                            Scenario: no distractors <br>
+                            Policy: Octo-Base <br>
+                          </p>
+                          <p style="color: green">Success</p>
+                      </div>
+                    </div>
+                    <div class="item-2">
+                        <video poster="" id="2" autoplay controls muted loop playsinline height="100%">
+                            <source src="videos/octo_base_10x.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <p>
+                              Task: "place the carrot on yellow plate"<br>
+                              Scenario: object distractors <br>
+                              Policy: Octo-Base <br>
+                            </p>
+                            <p style="color: red">Failure</p>
+                        </div>
+                    </div>
+                    <div class="item-3">
+                        <video poster="" id="3" autoplay controls muted loop playsinline height="100%">
+                            <source src="videos/byovla_success_10x.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <p>
+                              Task: "place the carrot on yellow plate"<br>
+                              Scenario: object distractors <br>
+                              Policy: Octo-Base <b>with BYOVLA</b> <br>
+                            </p>
+                            <p style="color: green">Success</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <br>
+
+
+
+
+    <!--
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
                 <h3 class="mt-4 mb-2">
                     Contributions
-                    <!-- Goal -->
+                    
                 </h3>
                 <p class="text-justify">
                     To this end, we propose Bring Your
@@ -185,6 +258,7 @@
 
             </div>
         </div>
+    -->
 
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
