@@ -86,11 +86,13 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li><a href="https://irom-lab.princeton.edu/">
-                        <image src="img/irom_lab.png" height="35px", width="150px" ></image>
+                        <image src="img/irom_princeton_logo.png" height="35px", width="150px" ></image>
                     </a></li>
+                    <!--
                     <li> <a href="https://www.princeton.edu/">
                         <image src="img/PU1line.svg" height="55px"></image>
                     </a></li>
+                    -->
                     
                 </ul>
             </div>
@@ -145,13 +147,15 @@
         </div>
         <br>
 
-        <div class="col-md-10 col-lg-8">
-        <h2 class="title is-3">Experiments</h2>
-            <p class="text-justify">
-                We demonstrate BYOVLA on two popular open-source VLA models, Octo-Base and OpenVLA-7b. With BYOVLA, the probability of success in the presence of task-irrelevant distractions is increased.</br> 
-            </p>
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+            <h2 class="title is-3">Experiments</h2>
+                <p class="text-justify">
+                    We demonstrate BYOVLA on two popular open-source VLA models, Octo-Base and OpenVLA-7b. With BYOVLA, the probability of success in the presence of task-irrelevant distractions is increased.</br> 
+                </p>
+            </div>
         </div>
-        
+
         <div class='myscope'>
             <section class="hero is-light is-small">
               <div class="hero-body">
@@ -242,38 +246,15 @@
         </div>
         <br>
 
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center"></div>
             <div class="col-md-10 col-lg-8">
-                <h3 class="mt-4 mb-2">
-                    Approach
-                    <!-- This section needs to be rewritten soon -->
-                </h3>
+            <h2 class="title is-3">Results</h2>
                 <p class="text-justify">
-
-                    Our approach is as follows
-
+                    We evaluate BYOVLA on Octo-Base with the task "place the carrot on yellow plate." With distractions, the performance of the nominal VLA policy significantly drops. Augmenting Octo-Base with BYOVLA allows the policy to achieve its nominal task-success rate even with distractions present. 
                 </p>
-                <!--
-                <p class="text-justify">
-                    KLGame allows a robot to incorporate <em>guidance</em> from data-driven rollouts while 
-                    performing online game-theoretic planning in closed-loop. This method uses a <em>tunable</em> parameter <span>&lambda;</span> 
-                    that modulates behaviors on a spectrum: <span>&lambda;=0</span> gives a deterministic dynamic game (<em>task-optimal</em>), 
-                    and <span>&lambda;&rarr;&infin;</span> gives multi-modal behavior cloning. We call this tunability <em>policy blending</em>.
+                <p style="text-align:center;"></p>
+                    <image src="img/octo_figure_noFull.png" width="100%"></image>
                 </p>
-
-                <p style="text-align:center;">
-                    <image src="img/fig2_master_simplified.png" width="100%"></image>
-                </p>
-                 -->
-                <!-- Put a better overview here -->
-                <p class="text-justify">
-                    BYOVLA Overview?
-                    <!-- TODO Figure highlighting all the experiments maybe?-->
-                <p class="text-justify">
-                    Experimental results and images, videos, gifs.
-                    
-                </p>
-
             </div>
         </div>
 
