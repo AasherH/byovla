@@ -61,13 +61,13 @@
         <div class="row has-text-centered">
             <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                    <a href="https://aasherh.github.io/">Asher J. Hancock</a>
+                    <a href="https://aasherh.github.io/">Asher J. Hancock,</a>
                 </span>
                 <span class="author-block">
-                    <a href="https://allenzren.github.io/">Allen Z. Ren</a>
+                    <a href="https://allenzren.github.io/"> Allen Z. Ren,</a>
                 </span>
                 <span class="author-block">
-                    <a href="https://irom-lab.princeton.edu/majumdar/">Anirudha Majumdar</a>
+                    <a href="https://irom-lab.princeton.edu/majumdar/"> Anirudha Majumdar</a>
                 </span>
             </div>
             <!--
@@ -190,6 +190,45 @@
                             <p style="color: green">Success</p>
                         </div>
                     </div>
+                    <div class="item-4">
+                        <video poster="" id="4" autoplay controls muted loop playsinline height="100%">
+                            <source src="videos/openVLA_baseline_success_10x.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <p>
+                              Task: "place the eggplant in the pan"<br>
+                              Scenario: no distractors <br>
+                              Policy: OpenVLA-7b
+                            </p>
+                            <p style="color: green">Success</p>
+                        </div>
+                      </div>
+                      <div class="item-5">
+                          <video poster="" id="5" autoplay controls muted loop playsinline height="100%">
+                              <source src="videos/openVLA_failure_10x.mp4" type="video/mp4">
+                          </video>
+                          <div class="video-overlay">
+                              <p>
+                                Task: "place the eggplant in the pan"<br>
+                                Scenario: object distractors <br>
+                                Policy: OpenVLA-7b
+                              </p>
+                              <p style="color: red">Failure</p>
+                          </div>
+                      </div>
+                      <div class="item-6">
+                          <video poster="" id="6" autoplay controls muted loop playsinline height="100%">
+                              <source src="videos/openVLA_success_10X.mp4" type="video/mp4">
+                          </video>
+                          <div class="video-overlay">
+                              <p>
+                                Task: "place the eggplant in the pan"<br>
+                                Scenario: object distractors <br>
+                                Policy: OpenVLA-7b <b>with BYOVLA</b>
+                              </p>
+                              <p style="color: green">Success</p>
+                          </div>
+                      </div>
                   </div>
                 </div>
               </div>
