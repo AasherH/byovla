@@ -147,7 +147,7 @@
                 <!--<h2 class="title is-3">TLDR</h2>-->
                 <p class="text-justify">
                     We introduce Bring Your Own VLA (BYOVLA): a run-time intervention scheme for vision-language-action (VLA) models 
-                    that improves baseline performance in the presence of distractor objects and backgrounds without finetuning or access to the model's weights. </br> 
+                    that improves baseline performance in the presence of task-irrelevant distractor objects and backgrounds without finetuning or access to the model's weights. </br> 
                 </p>
             </div>
         </div>
@@ -161,8 +161,8 @@
                 </p>
                 <br>
                 <p class="text-justify">
-                    BYOVLA is predicated on three simple steps applied to a VLA's input image: 1) determine task-irrelevant regions, 2) quantify sensitivity with visual sensitivity probe, and 3) transform the image. 
-                    Task-irrelevant regions are determined by a vision-language model (VLM). If the VLA is sensitive to a task-irrelevant region, BYOVLA transforms the image such that the model is no longer sensitive by simply removing objects and recoloring backgrounds. 
+                    BYOVLA is predicated on three simple steps applied to a VLA's input image: 1) determine task-irrelevant regions, 2) quantify sensitivity by perturbing regions, and 3) transform the image. 
+                    Task-irrelevant regions are determined by a vision-language model (VLM). If the VLA is sensitive to a task-irrelevant region, BYOVLA transforms the image such that the model is no longer sensitive by simply removing objects and recoloring backgrounds distractions. 
                 </p>
             </div>
         </div>
@@ -174,7 +174,7 @@
             </p>
             <h2 class="title is-3">Experiments</h2>
                 <p class="text-justify">
-                    We demonstrate BYOVLA on two popular open-source VLA models, Octo-Base and OpenVLA-7b. With BYOVLA, the probability of success in the presence of task-irrelevant distractions is increased.</br> 
+                    We demonstrate BYOVLA on two popular open-source VLA models, Octo-Base and OpenVLA-7b. <b>BYOVLA enables greater task-success rates when task-irrelvant distractions are present.</b><br>
                 </p>
             </div>
         </div>
@@ -276,7 +276,7 @@
             </p>
             <h2 class="title is-3">Results</h2>
                 <p class="text-justify">
-                    We evaluate BYOVLA on Octo-Base with the task "place the carrot on yellow plate." With distractions, the performance of the nominal VLA policy significantly drops. Augmenting Octo-Base with BYOVLA allows the policy to achieve its nominal task-success rate even with distractions present. 
+                    We evaluate BYOVLA on Octo-Base with the task "place the carrot on yellow plate." With distractions, the performance of the nominal VLA policy significantly drops. Augmenting Octo-Base with BYOVLA allows the policy to (nearly) achieve its nominal task-success rate even with distractions present. 
                 </p>
             <!--</div>-->
             <br>
