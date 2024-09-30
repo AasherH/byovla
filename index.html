@@ -271,14 +271,23 @@
             <div class="col-md-10 col-lg-8">
             <p style="text-align:center;">
             </p>
-            <h2 class="title is-3">Experiments</h2>
+            <h2 class="title is-3">Results</h2>
                 <p class="text-justify">
-                    We demonstrate BYOVLA on two popular open-source VLA models, Octo-Base and OpenVLA-7b. With BYOVLA, the probability of success in the presence of task-irrelevant distractions is increased.</br> 
+                    We evaluate BYOVLA on Octo-Base with the task "place the carrot on yellow plate." With distractions, the performance of the nominal VLA policy significantly drops. Augmenting Octo-Base with BYOVLA allows the policy to achieve its nominal task-success rate even with distractions present. 
                 </p>
             </div>
             <p style="text-align:center;"></p>
-                    <image src="img/octo_figure_noFull.png" width="100%"></image>
+                <image src="img/octo_figure_noFull.png" width="75%"></image>
             </p>
+            <br>
+            <p class="text-justify">
+                We also evaluate BYOVLA on OpenVLA-7b with the task "put the eggplant in the pot." Even though OpenVLA is 75x larger than Octo-Base, task-irrelevant distractions markedly degrade performance. We find that application of BYOVLA helps OpenVLA achieve its nominal task-success rate with distractions present. 
+            </p>
+        </div>
+        <p style="text-align:center;"></p>
+            <image src="img/openVLA_results.png" width="75%"></image>
+        </p>
+
         </div>
         <br>
 
