@@ -175,7 +175,7 @@
             </p>
             <h2 class="title is-3">Experiments</h2>
                 <p class="text-justify">
-                    We demonstrate BYOVLA on two popular open-source VLA models, Octo-Base and OpenVLA-7b. <b>BYOVLA enables greater task-success rates when task-irrelvant distractions are present.</b> All videos are 10x speed.<br>
+                    We demonstrate BYOVLA on two popular open-source VLA models, Octo-Base and OpenVLA-7b. <b>BYOVLA enables greater task-success rates when task-irrelvant distractions are present.</b> All videos are 4x speed.<br>
                 </p>
             </div>
         </div>
@@ -188,7 +188,7 @@
                   <div id="results-carousel" class="carousel results-carousel">
                     <div class="item-1">
                       <video poster="" id="1" controls muted loop playsinline height="100%">
-                          <source src="videos/baseline_success_10x.mp4" type="video/mp4">
+                          <source src="videos/4x/octo/octobase_noobjects_success_4x.mp4" type="video/mp4">
                       </video>
                       <div class="video-overlay">
                           <p>
@@ -201,7 +201,7 @@
                     </div>
                     <div class="item-2">
                         <video poster="" id="2" controls muted loop playsinline height="100%">
-                            <source src="videos/octo_base_10x.mp4" type="video/mp4">
+                            <source src="videos/4x/octo/octobase_objects_failure_4x.mp4" type="video/mp4">
                         </video>
                         <div class="video-overlay">
                             <p>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="item-3">
                         <video poster="" id="3" controls muted loop playsinline height="100%">
-                            <source src="videos/byovla_success_10x.mp4" type="video/mp4">
+                            <source src="videos/4x/octo/octobyovla_objects_success_4x.mp4" type="video/mp4">
                         </video>
                         <div class="video-overlay">
                             <p>
@@ -227,11 +227,11 @@
                     </div>
                     <div class="item-4">
                         <video poster="" id="4" controls muted loop playsinline height="100%">
-                            <source src="videos/openVLA_baseline_success_10x.mp4" type="video/mp4">
+                            <source src="videos/4x/openvla/openvla_nodistractions_success_4x.mp4" type="video/mp4">
                         </video>
                         <div class="video-overlay">
                             <p>
-                              Task: "place the eggplant in the pan"<br>
+                              Task: "place the eggplant in the pot"<br>
                               Scenario: no distractors <br>
                               Policy: OpenVLA-7b
                             </p>
@@ -240,11 +240,11 @@
                       </div>
                       <div class="item-5">
                           <video poster="" id="5" controls muted loop playsinline height="100%">
-                              <source src="videos/openVLA_failure_10x.mp4" type="video/mp4">
+                              <source src="videos/4x/openvla/openvla_distractions_failure_4x.mp4" type="video/mp4">
                           </video>
                           <div class="video-overlay">
                               <p>
-                                Task: "place the eggplant in the pan"<br>
+                                Task: "place the eggplant in the pot"<br>
                                 Scenario: object distractors <br>
                                 Policy: OpenVLA-7b
                               </p>
@@ -253,7 +253,7 @@
                       </div>
                       <div class="item-6">
                           <video poster="" id="6" controls muted loop playsinline height="100%">
-                              <source src="videos/openVLA_success_10X.mp4" type="video/mp4">
+                              <source src="videos/4x/openvla/openvlabyovla_distractions_success_4x.mp4" type="video/mp4">
                           </video>
                           <div class="video-overlay">
                               <p>
@@ -264,6 +264,32 @@
                               <p style="color: green">Success</p>
                           </div>
                       </div>
+                      <div class="item-7">
+                        <video poster="" id="6" controls muted loop playsinline height="100%">
+                            <source src="videos/4x/octo/octobase_backgrounds_failure_4x.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <p>
+                              Task: "place the carrot on yellow plate"<br>
+                              Scenario: background distractors <br>
+                              Policy: Octo-Base <b>with BYOVLA</b>
+                            </p>
+                            <p style="color: red">Failure</p>
+                        </div>
+                       </div>
+                       <div class="item-8">
+                        <video poster="" id="6" controls muted loop playsinline height="100%">
+                            <source src="videos/4x/octo/octobyovla_backgrounds_success_4x.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <p>
+                              Task: "place the eggplant in the pot"<br>
+                              Scenario: background distractors <br>
+                              Policy: Octo-Base <b>with BYOVLA</b>
+                            </p>
+                            <p style="color: green">Success</p>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -277,12 +303,12 @@
             </p>
             <h2 class="title is-3">Results</h2>
                 <p class="text-justify">
-                    We evaluate BYOVLA on Octo-Base with the task "place the carrot on yellow plate." With distractions, the performance of the nominal VLA policy significantly drops. Augmenting Octo-Base with <b>BYOVLA allows the policy to (nearly) achieve its nominal task-success rate </b> with distractions present. 
+                    We evaluate BYOVLA on Octo-Base with the task "place the carrot on yellow plate." With distractions, the performance of the nominal VLA policy significantly drops. Augmenting Octo-Base with <b>BYOVLA allows the policy to achieve its nominal task-success rate </b> with distractions present. 
                 </p>
             <!--</div>-->
             <br>
             <p style="text-align:center;">
-                <image src="img/octo_figure_noFull.png" width="100%"></image>
+                <image src="img/octo_figure.png" width="100%"></image>
             </p>
             <br>
             <p class="text-justify">
@@ -290,7 +316,7 @@
             </p>
             <br>
             <p style="text-align:center;">
-            <image src="img/openVLA_results.png" width="100%"></image>
+            <image src="img/openvla_results.png" width="100%"></image>
             </p>
         
         </div>
